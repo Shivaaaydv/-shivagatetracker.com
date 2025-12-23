@@ -1,167 +1,544 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>IMBUZI | Premium Clothing Like None Other</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="imbuzi, premium clothing, streetwear brand, indian premium clothing brands" />
-	<meta name="description"
-		content="IMBUZI is a premium clothing brand like none other! A mix of streetwear and premium fashion in IMBUZI's clothing." />
-	<meta name="subject" content="IMBUZI premium clothing brand">
-	<meta name="copyright" content="IMBUZI Clothing">
-	<meta name="language" content="ES">
-	<meta name="robots" content="index,follow" />
-	<meta name="revised" content="Monday, May 29th, 2023, 12:37 am" />
-	<meta name="abstract" content="premium clothing brand">
-	<meta name="topic" content="imbuzi premium clothing brand">
-	<meta name="summary" content="imbuzi premium clothing brand from india">
-	<meta name="Classification" content="Clothing">
-	<meta name="author" content="Ali Solanki, ali@alisolanki.com, ali@imbuzi.in">
-	<meta name="designer" content="Ali Solanki">
-	<meta name="copyright" content="Imbuzi">
-	<meta name="reply-to" content="support@imbuzi.in">
-	<meta name="owner" content="Ali Solanki, Sahil Siddique">
-	<meta name="url" content="http://www.imbuzi.in">
-	<meta name="identifier-URL" content="http://www.imbuzi.in">
-	<meta name="category" content="clothing">
-	<meta name="coverage" content="Worldwide">
-	<meta name="distribution" content="Global">
-	<meta name="rating" content="General">
-	<meta http-equiv="Pragma" content="no-cache">
-	<meta http-equiv="Cache-Control" content="no-cache">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GATE 2026 Study Tracker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-	<!-- Open Graph / Facebook -->
-	<meta name="og:title" content="IMBUZI | Premium Clothing Brand" />
-	<meta name="og:type" content="clothing shop" />
-	<meta name="og:url" content="http://www.imbuzi.in" />
-	<meta name="og:image" content="https://www.imbuzi.in/images/goat2.webp" />
-	<meta name="og:site_name" content="IMBUZI | Premium Clothing Brand" />
-	<meta name="og:description"
-		content="IMBUZI is a premium clothing brand like none other! A mix of streetwear and premium fashion in IMBUZI's clothing. Aesthetic clothing wear by IMBUZI, an Indian brand." />
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
 
-	<meta name="og:email" content="support@imbuzi.in" />
-	<meta name="og:phone_number" content="650-123-4567" />
-	<meta name="og:fax_number" content="+1-415-123-4567" />
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
 
-	<meta name="og:street-address" content="Andheri (W), Mumbai" />
-	<meta name="og:locality" content="Andheri" />
-	<meta name="og:region" content="MUM" />
-	<meta name="og:postal-code" content="400058" />
-	<meta name="og:country-name" content="INDIA" />
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
 
-	<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/custom.css">
-	<!--===============================================================================================-->
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RERKTKH6K4"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
 
-		gtag('config', 'G-RERKTKH6K4');
-	</script>
-	<!-- Clarity tracking code for https://imbuzi.in -->
-	<script type="text/javascript">
-		(function (c, l, a, r, i, t, y) {
-			c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-			t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-			y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-		})(window, document, "clarity", "script", "hb1fmp8dy2");
-	</script>
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            background: #f8f9fa;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-card h3 {
+            color: #667eea;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .subject-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-left: 5px solid;
+        }
+
+        .subject-card.ga { border-left-color: #ff6b6b; }
+        .subject-card.em { border-left-color: #4ecdc4; }
+        .subject-card.dl { border-left-color: #45b7d1; }
+        .subject-card.nt { border-left-color: #f9ca24; }
+        .subject-card.ss { border-left-color: #a29bfe; }
+
+        .subject-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .subject-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .subject-target {
+            background: #f8f9fa;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .topics {
+            margin: 15px 0;
+        }
+
+        .topic-item {
+            padding: 8px 0;
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .topic-item:before {
+            content: "▸ ";
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .calendar {
+            padding: 30px;
+        }
+
+        .calendar-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .calendar-header h2 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .week {
+            margin-bottom: 25px;
+        }
+
+        .week-title {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .days-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 15px;
+        }
+
+        .day-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 15px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .day-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        .day-card.completed {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            border-color: #667eea;
+        }
+
+        .day-date {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .day-subjects {
+            font-size: 0.85em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .checkbox {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        .checkbox input {
+            margin-right: 8px;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.3s;
+        }
+
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9em;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+        }
+    </style>
 </head>
-
 <body>
-	<div class="flex-w flex-str size1 overlay1">
-		<div class="flex-w flex-col-sb wsize1 bg0 p-l-70 p-t-37 p-b-52 p-r-50 respon1">
-			<div class="wrappic1">
-				<a href="#" class="navbar-brand title">
-					IMBUZI
-				</a>
-			</div>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 GATE 2026 Study Tracker</h1>
+            <p>December 24, 2025 - January 22, 2026 | 30 Days to Excellence</p>
+            <div style="margin-top: 20px; padding: 15px 30px; background: rgba(255,255,255,0.2); border-radius: 10px; backdrop-filter: blur(10px);">
+                <p style="font-size: 1.2em; font-style: italic; line-height: 1.6;">
+                    "One day of hard work builds hope,<br>daily hard work builds rank."
+                </p>
+                <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.9;">— Shiva Yadav</p>
+            </div>
+        </div>
 
-			<div class="w-full p-t-100 p-b-90 p-l-48 p-l-0-md">
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3>Total Days</h3>
+                <div class="stat-value">30</div>
+            </div>
+            <div class="stat-card">
+                <h3>Days Completed</h3>
+                <div class="stat-value" id="completedDays">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Progress</h3>
+                <div class="stat-value" id="progressPercent">0%</div>
+            </div>
+            <div class="stat-card">
+                <h3>Target Score</h3>
+                <div class="stat-value">33-42</div>
+            </div>
+        </div>
 
-				<h3 class="l1-txt1 p-b-34 respon3">
-					Coming Soon
-				</h3>
+        <div class="subjects-grid">
+            <div class="subject-card ga">
+                <div class="subject-header">
+                    <div class="subject-title">1️⃣ General Aptitude</div>
+                    <div class="subject-target">9-12 marks</div>
+                </div>
+                <div style="color: #ff6b6b; font-weight: bold; margin-bottom: 10px;">📌 DAILY (30-45 min)</div>
+                <div class="topics">
+                    <div class="topic-item">Verbal Ability</div>
+                    <div class="topic-item">Quantitative Aptitude</div>
+                    <div class="topic-item">Logical Reasoning</div>
+                </div>
+            </div>
 
-				<p class="m2-txt1 p-b-46">
-					Enter details to get exclusive IMBUZI drops!
-				</p>
-				<!-- https://forms.gle/cRWjiTP598iD4FAm7 -->
-				<!-- <form id="newsletter-form" class="contact100-form validate-form m-t-10 m-b-10" target="_blank"
-					action="https://forms.gle/cRWjiTP598iD4FAm7">
-					<div class="wrap-input100  newsletter-error validate-input m-lr-auto-lg"
-						data-validate="Email is required">
-						<input class="s2-txt1 placeholder0 input100 trans-04" type="email" name="Email"
-							placeholder="Email Address">
+            <div class="subject-card em">
+                <div class="subject-header">
+                    <div class="subject-title">2️⃣ Engineering Maths</div>
+                    <div class="subject-target">8-10 marks</div>
+                </div>
+                <div style="color: #4ecdc4; font-weight: bold; margin-bottom: 10px;">📌 Start First</div>
+                <div class="topics">
+                    <div class="topic-item">Linear Algebra</div>
+                    <div class="topic-item">Calculus</div>
+                    <div class="topic-item">Probability & Statistics</div>
+                </div>
+            </div>
 
-						<button class="flex-c-m ab-t-r size2 hov1 respon5">
-							<i class="fa fa-spinner fa-spin loading"></i>
-							<i class="zmdi zmdi-long-arrow-right fs-30 cl1 trans-04"></i>
-						</button>
+            <div class="subject-card dl">
+                <div class="subject-header">
+                    <div class="subject-title">3️⃣ Digital Logic</div>
+                    <div class="subject-target">7-9 marks</div>
+                </div>
+                <div style="color: #45b7d1; font-weight: bold; margin-bottom: 10px;">📌 Strongest Subject</div>
+                <div class="topics">
+                    <div class="topic-item">Boolean Algebra</div>
+                    <div class="topic-item">Combinational & Sequential Circuits</div>
+                    <div class="topic-item">Flip-Flops, Counters, Registers</div>
+                    <div class="topic-item">Finite State Machines (FSM)</div>
+                </div>
+            </div>
 
-						<div class="flex-c-m ab-t-l s2-txt1 size4 bor1 respon4">
-							<span>Subcribe Now:</span>
-						</div>
-					</div>
-				</form> -->
-				<!-- HTML !-->
-				<a class="button-28" role="button" href="https://forms.gle/cRWjiTP598iD4FAm7" target="_blank">Enter</a>
-				<a class="button-28 bordered-btn" role="button" href="https://manufacturers.imbuzi.in"
-					target="_blank">Manufacturers
-					List</a>
+            <div class="subject-card nt">
+                <div class="subject-header">
+                    <div class="subject-title">4️⃣ Network Theory</div>
+                    <div class="subject-target">5-6 marks</div>
+                </div>
+                <div style="color: #f9ca24; font-weight: bold; margin-bottom: 10px;">📌 Formula + Numericals</div>
+                <div class="topics">
+                    <div class="topic-item">KCL, KVL</div>
+                    <div class="topic-item">Network Theorems</div>
+                    <div class="topic-item">Transients & AC Circuits</div>
+                </div>
+            </div>
 
-			</div>
+            <div class="subject-card ss">
+                <div class="subject-header">
+                    <div class="subject-title">5️⃣ Signals & Systems</div>
+                    <div class="subject-target">4-5 marks</div>
+                </div>
+                <div style="color: #a29bfe; font-weight: bold; margin-bottom: 10px;">📌 Selective Study</div>
+                <div class="topics">
+                    <div class="topic-item">LTI Systems & Convolution</div>
+                    <div class="topic-item">Laplace Transform</div>
+                    <div class="topic-item">Fourier Transform (properties)</div>
+                </div>
+            </div>
+        </div>
 
-			<div class="flex-w flex-m">
-				<span class="m2-txt2 p-r-40">
-					Follow us
-				</span>
+        <div class="calendar">
+            <div class="calendar-header">
+                <h2>📅 30-Day Study Calendar</h2>
+                <p style="color: #666; margin-top: 10px;">Click on checkboxes to mark topics as completed</p>
+            </div>
 
-				<a href="https://instagram.com/imbuzi.in" class="size3 flex-c-m how-social trans-04 m-r-15 m-b-5 m-t-5">
-					<i class="fa fa-instagram"></i>
-				</a>
-			</div>
-		</div>
+            <div id="calendarContent"></div>
 
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #ff6b6b;"></div>
+                    <span>GA (Daily)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #4ecdc4;"></div>
+                    <span>Engg. Maths</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #45b7d1;"></div>
+                    <span>Digital Logic</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #f9ca24;"></div>
+                    <span>Network Theory</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #a29bfe;"></div>
+                    <span>Signals & Systems</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		<div class="wsize2 bg-img1 respon2" style="background-image: url('images/goat2.webp');">
-		</div>
-	</div>
+    <script>
+        const studyPlan = [
+            // Week 1: Dec 24-30
+            {week: 1, days: [
+                {date: 'Dec 24', subjects: ['GA (Daily)', 'Linear Algebra Basics', 'Boolean Algebra']},
+                {date: 'Dec 25', subjects: ['GA (Daily)', 'Matrices & Determinants', 'Combinational Circuits']},
+                {date: 'Dec 26', subjects: ['GA (Daily)', 'Eigen Values', 'Sequential Circuits']},
+                {date: 'Dec 27', subjects: ['GA (Daily)', 'Calculus - Limits', 'Flip-Flops']},
+                {date: 'Dec 28', subjects: ['GA (Daily)', 'Differentiation', 'Counters & Registers']},
+                {date: 'Dec 29', subjects: ['GA (Daily)', 'Integration', 'FSM - Mealy/Moore']},
+                {date: 'Dec 30', subjects: ['GA (Daily)', 'Revision Day', 'Digital Logic Practice']}
+            ]},
+            // Week 2: Dec 31 - Jan 6
+            {week: 2, days: [
+                {date: 'Dec 31', subjects: ['GA (Daily)', 'Probability Basics', 'KCL & KVL']},
+                {date: 'Jan 1', subjects: ['GA (Daily)', 'Random Variables', 'Network Theorems']},
+                {date: 'Jan 2', subjects: ['GA (Daily)', 'Distributions', 'Thevenin & Norton']},
+                {date: 'Jan 3', subjects: ['GA (Daily)', 'Statistics', 'Superposition & Max Power']},
+                {date: 'Jan 4', subjects: ['GA (Daily)', 'Engg Maths Revision', 'Transient Analysis']},
+                {date: 'Jan 5', subjects: ['GA (Daily)', 'Mock Test', 'AC Circuits']},
+                {date: 'Jan 6', subjects: ['GA (Daily)', 'Weak Areas', 'Network Theory Practice']}
+            ]},
+            // Week 3: Jan 7-13
+            {week: 3, days: [
+                {date: 'Jan 7', subjects: ['GA (Daily)', 'Digital Logic Revision', 'LTI Systems']},
+                {date: 'Jan 8', subjects: ['GA (Daily)', 'Boolean Practice', 'Convolution']},
+                {date: 'Jan 9', subjects: ['GA (Daily)', 'Circuit Design', 'Laplace Transform']},
+                {date: 'Jan 10', subjects: ['GA (Daily)', 'FSM Practice', 'Fourier Properties']},
+                {date: 'Jan 11', subjects: ['GA (Daily)', 'Network Theory Revision', 'Signals Practice']},
+                {date: 'Jan 12', subjects: ['GA (Daily)', 'Full Mock Test', 'Analysis']},
+                {date: 'Jan 13', subjects: ['GA (Daily)', 'Revision', 'Problem Solving']}
+            ]},
+            // Week 4: Jan 14-20
+            {week: 4, days: [
+                {date: 'Jan 14', subjects: ['GA (Daily)', 'All Topics Revision', 'Weak Areas']},
+                {date: 'Jan 15', subjects: ['GA (Daily)', 'Speed Practice', 'Time Management']},
+                {date: 'Jan 16', subjects: ['GA (Daily)', 'Mock Test 2', 'Analysis']},
+                {date: 'Jan 17', subjects: ['GA (Daily)', 'Important Formulas', 'Quick Revision']},
+                {date: 'Jan 18', subjects: ['GA (Daily)', 'Previous Year Qs', 'Pattern Analysis']},
+                {date: 'Jan 19', subjects: ['GA (Daily)', 'Final Mock Test', 'Strategy']},
+                {date: 'Jan 20', subjects: ['GA (Daily)', 'Light Revision', 'Stay Confident']}
+            ]},
+            // Final Days: Jan 21-22
+            {week: 5, days: [
+                {date: 'Jan 21', subjects: ['GA (Daily)', 'Formula Revision', 'Relax']},
+                {date: 'Jan 22', subjects: ['GA (Daily)', 'Light Topics', 'Stay Positive']}
+            ]}
+        ];
 
+        function renderCalendar() {
+            const container = document.getElementById('calendarContent');
+            container.innerHTML = '';
 
+            studyPlan.forEach(weekData => {
+                const weekDiv = document.createElement('div');
+                weekDiv.className = 'week';
+                weekDiv.innerHTML = `<div class="week-title">Week ${weekData.week}</div>`;
 
+                const daysGrid = document.createElement('div');
+                daysGrid.className = 'days-grid';
 
+                weekData.days.forEach((day, dayIndex) => {
+                    const dayCard = document.createElement('div');
+                    dayCard.className = 'day-card';
+                    dayCard.id = `day-${weekData.week}-${dayIndex}`;
 
-	<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+                    let subjectsHtml = day.subjects.map((subject, subIndex) => 
+                        `<div class="checkbox">
+                            <input type="checkbox" id="check-${weekData.week}-${dayIndex}-${subIndex}" 
+                                   onchange="updateProgress()">
+                            <label for="check-${weekData.week}-${dayIndex}-${subIndex}">${subject}</label>
+                        </div>`
+                    ).join('');
 
+                    dayCard.innerHTML = `
+                        <div class="day-date">${day.date}</div>
+                        <div class="day-subjects">${subjectsHtml}</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-${weekData.week}-${dayIndex}" style="width: 0%"></div>
+                        </div>
+                    `;
+
+                    daysGrid.appendChild(dayCard);
+                });
+
+                weekDiv.appendChild(daysGrid);
+                container.appendChild(weekDiv);
+            });
+
+            loadProgress();
+        }
+
+        function updateProgress() {
+            let totalDays = 0;
+            let completedDays = 0;
+
+            studyPlan.forEach((weekData, weekIndex) => {
+                weekData.days.forEach((day, dayIndex) => {
+                    totalDays++;
+                    const checkboxes = day.subjects.map((_, subIndex) => 
+                        document.getElementById(`check-${weekData.week}-${dayIndex}-${subIndex}`)
+                    );
+
+                    const checked = checkboxes.filter(cb => cb.checked).length;
+                    const total = checkboxes.length;
+                    const percentage = (checked / total) * 100;
+
+                    const progressBar = document.getElementById(`progress-${weekData.week}-${dayIndex}`);
+                    if (progressBar) {
+                        progressBar.style.width = percentage + '%';
+                    }
+
+                    const dayCard = document.getElementById(`day-${weekData.week}-${dayIndex}`);
+                    if (percentage === 100) {
+                        dayCard.classList.add('completed');
+                        completedDays++;
+                    } else {
+                        dayCard.classList.remove('completed');
+                    }
+                });
+            });
+
+            document.getElementById('completedDays').textContent = completedDays;
+            document.getElementById('progressPercent').textContent = Math.round((completedDays / totalDays) * 100) + '%';
+
+            saveProgress();
+        }
+
+        function saveProgress() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const states = {};
+            checkboxes.forEach(cb => {
+                states[cb.id] = cb.checked;
+            });
+            localStorage.setItem('gateStudyProgress', JSON.stringify(states));
+        }
+
+        function loadProgress() {
+            const saved = localStorage.getItem('gateStudyProgress');
+            if (saved) {
+                const states = JSON.parse(saved);
+                Object.keys(states).forEach(id => {
+                    const checkbox = document.getElementById(id);
+                    if (checkbox) {
+                        checkbox.checked = states[id];
+                    }
+                });
+                updateProgress();
+            }
+        }
+
+        renderCalendar();
+    </script>
 </body>
-
 </html>
