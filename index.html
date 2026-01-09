@@ -1,33 +1,846 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SolarCraft - Solar PV Manufacturing Excellence</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <title>Solar PV Module Manufacturing Documentation</title>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .mono { font-family: 'JetBrains Mono', monospace; }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f1f1; }
-        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 40px 20px;
+            color: #2c3e50;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 4px solid #3498db;
+            padding-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .header .subtitle {
+            font-size: 1.1em;
+            color: #7f8c8d;
+            font-weight: 300;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            page-break-inside: avoid;
+        }
+        
+        .section-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        
+        .section-title .icon {
+            font-size: 1.3em;
+        }
+        
+        /* Colorful section backgrounds */
+        .blue-section { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .green-section { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); }
+        .orange-section { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .purple-section { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .red-section { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+        .teal-section { background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); }
+        .pink-section { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
+        .yellow-section { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); }
+        .indigo-section { background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); }
+        
+        .param-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .param-item {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid;
+            transition: all 0.3s ease;
+        }
+        
+        .param-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .param-label {
+            font-weight: 600;
+            color: #34495e;
+            margin-bottom: 5px;
+            font-size: 0.95em;
+        }
+        
+        .param-value {
+            color: #2c3e50;
+            font-size: 1.05em;
+            font-weight: 500;
+        }
+        
+        /* Color coding for parameters */
+        .blue-border { border-left-color: #3498db; }
+        .green-border { border-left-color: #2ecc71; }
+        .orange-border { border-left-color: #e67e22; }
+        .purple-border { border-left-color: #9b59b6; }
+        .red-border { border-left-color: #e74c3c; }
+        .teal-border { border-left-color: #1abc9c; }
+        .pink-border { border-left-color: #fd79a8; }
+        .yellow-border { border-left-color: #f39c12; }
+        
+        .subsection {
+            margin: 25px 0;
+        }
+        
+        .subsection-title {
+            font-size: 1.15em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 3px solid #3498db;
+        }
+        
+        .formula-box {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border: 2px dashed #667eea;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .formula-box .label {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .formula {
+            font-size: 1.2em;
+            font-family: 'Courier New', monospace;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        .note-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .note-box .note-title {
+            font-weight: 600;
+            color: #856404;
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .param-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
-<script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0"
-  }
-}
-</script>
 </head>
-<body class="bg-slate-50 text-slate-900">
-    <div id="root"></div>
-</body>
-</html>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>☀️ Solar PV Module Manufacturing</h1>
+            <div class="subtitle">Technical Specifications & Process Parameters</div>
+        </div>
 
+        <!-- Section 1: Solar Cell Specifications -->
+        <div class="section">
+            <div class="section-title blue-section">
+                <span class="icon">🔷</span>
+                <span>Solar Cell Specifications</span>
+            </div>
+            <div class="param-grid">
+                <div class="param-item blue-border">
+                    <div class="param-label">Purpose</div>
+                    <div class="param-value">Verify EVA/EPE shrinkage %</div>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <div class="subsection-title">Acceptable Limits</div>
+                <div class="param-grid">
+                    <div class="param-item blue-border">
+                        <div class="param-label">MD (Machine Direction)</div>
+                        <div class="param-value">≤ 3 %</div>
+                    </div>
+                    <div class="param-item blue-border">
+                        <div class="param-label">TD (Transverse Direction)</div>
+                        <div class="param-value">≤ 1.5 %</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formula-box">
+                <div class="label">Shrinkage Calculation Formula</div>
+                <div class="formula">Shrinkage % = [(Initial - Final) × 100] / Initial</div>
+            </div>
+        </div>
+
+        <!-- Section 17: Lamination Process -->
+        <div class="section">
+            <div class="section-title green-section">
+                <span class="icon">🔄</span>
+                <span>Lamination Process (Old Oven)</span>
+            </div>
+            <div class="param-grid">
+                <div class="param-item green-border">
+                    <div class="param-label">Start Time</div>
+                    <div class="param-value">4:30 PM</div>
+                </div>
+                <div class="param-item green-border">
+                    <div class="param-label">End Time</div>
+                    <div class="param-value">8:35 AM</div>
+                </div>
+                <div class="param-item green-border">
+                    <div class="param-label">Bottom Layer</div>
+                    <div class="param-value">Lamination-1</div>
+                </div>
+                <div class="param-item green-border">
+                    <div class="param-label">Exhaust</div>
+                    <div class="param-value">Small Fan</div>
+                </div>
+                <div class="param-item green-border">
+                    <div class="param-label">Vacuum</div>
+                    <div class="param-value">Large Fan</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 18: Labels & Identification -->
+        <div class="section">
+            <div class="section-title orange-section">
+                <span class="icon">🏷️</span>
+                <span>Labels & Identification</span>
+            </div>
+            <div class="param-grid">
+                <div class="param-item orange-border">
+                    <div class="param-label">Company Logo Position</div>
+                    <div class="param-value">Top Right (Front Side)</div>
+                </div>
+                <div class="param-item orange-border">
+                    <div class="param-label">RFID Position</div>
+                    <div class="param-value">Back Side</div>
+                </div>
+                <div class="param-item orange-border">
+                    <div class="param-label">RFID Size</div>
+                    <div class="param-value">8 × 98 mm</div>
+                </div>
+                <div class="param-item orange-border">
+                    <div class="param-label">Back Label Size</div>
+                    <div class="param-value">30 × 170 mm</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 19: Utilities & Consumables -->
+        <div class="section">
+            <div class="section-title purple-section">
+                <span class="icon">🛠️</span>
+                <span>Utilities & Consumables</span>
+            </div>
+            <div class="param-grid">
+                <div class="param-item purple-border">
+                    <div class="param-label">DM Water</div>
+                    <div class="param-value">Demineralized Water</div>
+                </div>
+                <div class="param-item purple-border">
+                    <div class="param-label">Sealant Hardness</div>
+                    <div class="param-value">42 – 60 Shore</div>
+                </div>
+                <div class="param-item purple-border">
+                    <div class="param-label">Sealant Drum Capacity</div>
+                    <div class="param-value">1038 units / 270 kg</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 20: Quality & Audit -->
+        <div class="section">
+            <div class="section-title red-section">
+                <span class="icon">✅</span>
+                <span>Quality & Audit</span>
+            </div>
+            <div class="param-grid">
+                <div class="param-item red-border">
+                    <div class="param-label">IQC Area</div>
+                    <div class="param-value">3110</div>
+                </div>
+                <div class="param-item red-border">
+                    <div class="param-label">OBA</div>
+                    <div class="param-value">Out of Box Audit</div>
+                </div>
+                <div class="param-item red-border">
+                    <div class="param-label">Audit Weight Range</div>
+                    <div class="param-value">8 – 15 g</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Note -->
+        <div class="note-box">
+            <div class="note-title">📌 Document Purpose</div>
+            This documentation is suitable for: <span class="highlight">SOP Documentation</span>, <span class="highlight">ISO/IEC Audit</span>, <span class="highlight">Engineer Training</span>, <span class="highlight">Production Manuals</span>, and <span class="highlight">Quality Control</span>.
+        </div>
+
+    </div>
+</body>
+</html>    <div class="param-label">Cell Size</div>
+                    <div class="param-value">182.2 mm × 182.2 mm</div>
+                </div>
+                <div class="param-item blue-border">
+                    <div class="param-label">Half-Cut Cell Size</div>
+                    <div class="param-value">91.1 mm</div>
+                </div>
+                <div class="param-item blue-border">
+                    <div class="param-label">Cell Thickness</div>
+                    <div class="param-value">130 ± 13 µm</div>
+                </div>
+                <div class="param-item blue-border">
+                    <div class="param-label">Cell Efficiency</div>
+                    <div class="param-value">25.1 %</div>
+                </div>
+                <div class="param-item blue-border">
+                    <div class="param-label">Cell Tolerance</div>
+                    <div class="param-value">±0.5 mm</div>
+                </div>
+                <div class="param-item blue-border">
+                    <div class="param-label">Number of Busbars</div>
+                    <div class="param-value">16 BB</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Cell & String Configuration -->
+        <div class="section">
+            <div class="section-title green-section">
+                <span class="icon">🔢</span>
+                <span>Cell & String Configuration</span>
+            </div>
+            <div class="param-grid">
+                <div class="param-item green-border">
+                    <div class="param-label">Cells per Module (Full Cell)</div>
+                    <div class="param-value">72</div>
+                </div>
+                <div class="param-item green-border">
+                    <div class="param-label">Cells per Module (Half Cell)</div>
+                    <div class="param-value">144</div>
+                </div>
+                <div class="param-item green-border">
+                    <div class="param-label">Cells per String</div>
+                    <div class="param-value">12</div>
+                </div>
+                <div class="param-item green-border">
+                    <div class="param-label">Strings per Module</div>
+                    <div class="param-value">12</div>
+                </div>
+                <div class="param-item green-border">
+                    <div class="param-label">Number of Tapes per Module</div>
+                    <div class="param-value">34</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: String Dimensions & Spacing -->
+        <div class="section">
+            <div class="section-title orange-section">
+                <span class="icon">📏</span>
+                <span>String Dimensions & Spacing</span>
+            </div>
+            <div class="param-grid">
+                <div class="param-item orange-border">
+                    <div class="param-label">String Length</div>
+                    <div class="param-value">1109.7 mm</div>
+                </div>
+                <div class="param-item orange-border">
+                    <div class="param-label">Cell-to-Cell Gap</div>
+                    <div class="param-value">1.5 mm</div>
+                </div>
+                <div class="param-item orange-border">
+                    <div class="param-label">String-to-String Gap</div>
+                    <div class="param-value">1.5 mm</div>
+                </div>
+                <div class="param-item orange-border">
+                    <div class="param-label">Head & Tail Length of String</div>
+                    <div class="param-value">8 mm</div>
+                </div>
+                <div class="param-item orange-border">
+                    <div class="param-label">Cell to Ribbon Start Distance</div>
+                    <div class="param-value">0.91 mm</div>
+                </div>
+                <div class="param-item orange-border">
+                    <div class="param-label">Cell to Ribbon End Distance</div>
+                    <div class="param-value">5 mm</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Ribbon Specifications -->
+        <div class="section">
+            <div class="section-title purple-section">
+                <span class="icon">🎀</span>
+                <span>Ribbon Specifications</span>
+            </div>
+            
+            <div class="subsection">
+                <div class="subsection-title">Main Ribbon</div>
+                <div class="param-grid">
+                    <div class="param-item purple-border">
+                        <div class="param-label">Ribbon Thickness</div>
+                        <div class="param-value">0.26 mm</div>
+                    </div>
+                    <div class="param-item purple-border">
+                        <div class="param-label">Ribbon Length per Module</div>
+                        <div class="param-value">~21,000 mm</div>
+                    </div>
+                    <div class="param-item purple-border">
+                        <div class="param-label">Ribbon Consumption per Module</div>
+                        <div class="param-value">64 g</div>
+                    </div>
+                    <div class="param-item purple-border">
+                        <div class="param-label">One Ribbon Spool Weight</div>
+                        <div class="param-value">10 kg</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">Cut Ribbon</div>
+                <div class="param-grid">
+                    <div class="param-item purple-border">
+                        <div class="param-label">Full Cell Ribbon Length</div>
+                        <div class="param-value">177 mm</div>
+                    </div>
+                    <div class="param-item purple-border">
+                        <div class="param-label">Half Cell Ribbon Length</div>
+                        <div class="param-value">97.5 mm</div>
+                    </div>
+                    <div class="param-item purple-border">
+                        <div class="param-label">2-Cell Ribbon Cut Length</div>
+                        <div class="param-value">174 mm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 5: Flat Ribbon -->
+        <div class="section">
+            <div class="section-title red-section">
+                <span class="icon">📐</span>
+                <span>Flat Ribbon (Flattened Ribbon)</span>
+            </div>
+            <div class="param-grid">
+                <div class="param-item red-border">
+                    <div class="param-label">Width</div>
+                    <div class="param-value">8 mm</div>
+                </div>
+                <div class="param-item red-border">
+                    <div class="param-label">Thickness</div>
+                    <div class="param-value">0.18 mm</div>
+                </div>
+                <div class="param-item red-border">
+                    <div class="param-label">Thickness Range (Alternate)</div>
+                    <div class="param-value">0.12 – 0.15 mm</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 6: Busbar Specifications -->
+        <div class="section">
+            <div class="section-title teal-section">
+                <span class="icon">⚡</span>
+                <span>Busbar Specifications</span>
+            </div>
+            <div class="param-grid">
+                <div class="param-item teal-border">
+                    <div class="param-label">Busbar Length</div>
+                    <div class="param-value">530 mm</div>
+                </div>
+                <div class="param-item teal-border">
+                    <div class="param-label">Busbar Thickness</div>
+                    <div class="param-value">0.45 mm</div>
+                </div>
+                <div class="param-item teal-border">
+                    <div class="param-label">Busbar Consumption per Module</div>
+                    <div class="param-value">63 g</div>
+                </div>
+                <div class="param-item teal-border">
+                    <div class="param-label">One Busbar Spool Weight</div>
+                    <div class="param-value">10 kg</div>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <div class="subsection-title">Busbar Cutting Type</div>
+                <div class="param-grid">
+                    <div class="param-item teal-border">
+                        <div class="param-label">L-Type × 2</div>
+                        <div class="param-value">7.5 g</div>
+                    </div>
+                    <div class="param-item teal-border">
+                        <div class="param-label">U-Type × 2</div>
+                        <div class="param-value">15.4 g</div>
+                    </div>
+                    <div class="param-item teal-border">
+                        <div class="param-label">I-Type × 6</div>
+                        <div class="param-value">40.2 g</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 7: Tap & Terminal Details -->
+        <div class="section">
+            <div class="section-title pink-section">
+                <span class="icon">🔌</span>
+                <span>Tap & Terminal Details</span>
+            </div>
+            <div class="param-grid">
+                <div class="param-item pink-border">
+                    <div class="param-label">Tap Size</div>
+                    <div class="param-value">10 × 17 mm</div>
+                </div>
+                <div class="param-item pink-border">
+                    <div class="param-label">Tap Thickness</div>
+                    <div class="param-value">0.10 mm</div>
+                </div>
+                <div class="param-item pink-border">
+                    <div class="param-label">Busbar Terminal Height</div>
+                    <div class="param-value">23 ± 2 mm</div>
+                </div>
+                <div class="param-item pink-border">
+                    <div class="param-label">Terminal Middle Gap</div>
+                    <div class="param-value">7 – 9 mm</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 8: Glass & Encapsulant -->
+        <div class="section">
+            <div class="section-title yellow-section">
+                <span class="icon">🪟</span>
+                <span>Glass & Encapsulant Specifications</span>
+            </div>
+            
+            <div class="subsection">
+                <div class="subsection-title">Glass</div>
+                <div class="param-grid">
+                    <div class="param-item yellow-border">
+                        <div class="param-label">Glass Size</div>
+                        <div class="param-value">2272 × 1128 mm</div>
+                    </div>
+                    <div class="param-item yellow-border">
+                        <div class="param-label">Glass Thickness</div>
+                        <div class="param-value">2 mm</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">EVA (Ethylene Vinyl Acetate)</div>
+                <div class="param-grid">
+                    <div class="param-item yellow-border">
+                        <div class="param-label">Back EVA Size</div>
+                        <div class="param-value">2280 × 1122 mm</div>
+                    </div>
+                    <div class="param-item yellow-border">
+                        <div class="param-label">Thickness</div>
+                        <div class="param-value">0.55 mm</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">EPE (Expanded Polyethylene)</div>
+                <div class="param-grid">
+                    <div class="param-item yellow-border">
+                        <div class="param-label">Front EPE Size</div>
+                        <div class="param-value">2280 × 1118 mm</div>
+                    </div>
+                    <div class="param-item yellow-border">
+                        <div class="param-label">Thickness</div>
+                        <div class="param-value">0.55 mm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 9: Layout & Clearance Parameters -->
+        <div class="section">
+            <div class="section-title indigo-section">
+                <span class="icon">📐</span>
+                <span>Layout & Clearance Parameters</span>
+            </div>
+            <div class="param-grid">
+                <div class="param-item blue-border">
+                    <div class="param-label">Cell to Glass Gap (Top)</div>
+                    <div class="param-value">19.08 mm</div>
+                </div>
+                <div class="param-item blue-border">
+                    <div class="param-label">Cell to Glass Gap (Bottom)</div>
+                    <div class="param-value">19.08 mm</div>
+                </div>
+                <div class="param-item blue-border">
+                    <div class="param-label">Cell to Glass Gap (Middle)</div>
+                    <div class="param-value">13 mm</div>
+                </div>
+                <div class="param-item blue-border">
+                    <div class="param-label">Cell to Glass Gap (Side)</div>
+                    <div class="param-value">13.65 mm</div>
+                </div>
+                <div class="param-item blue-border">
+                    <div class="param-label">Cell to Busbar Gap</div>
+                    <div class="param-value">5 mm</div>
+                </div>
+                <div class="param-item blue-border">
+                    <div class="param-label">Busbar to Glass Gap</div>
+                    <div class="param-value">10 mm</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 10: Flux & Chemical Usage -->
+        <div class="section">
+            <div class="section-title green-section">
+                <span class="icon">💧</span>
+                <span>Flux & Chemical Usage</span>
+            </div>
+            <div class="param-grid">
+                <div class="param-item green-border">
+                    <div class="param-label">Flux Consumption per Module</div>
+                    <div class="param-value">0.29 ml</div>
+                </div>
+                <div class="param-item green-border">
+                    <div class="param-label">Flux Tank Pressure</div>
+                    <div class="param-value">0.05 – 0.15 MPa</div>
+                </div>
+                <div class="param-item green-border">
+                    <div class="param-label">Flux Nature</div>
+                    <div class="param-value">Conductive</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 11: Pneumatic & Pressure Settings -->
+        <div class="section">
+            <div class="section-title orange-section">
+                <span class="icon">🌬️</span>
+                <span>Pneumatic & Pressure Settings</span>
+            </div>
+            <div class="param-grid">
+                <div class="param-item orange-border">
+                    <div class="param-label">Air Pressure</div>
+                    <div class="param-value">0.55 – 0.60 MPa</div>
+                </div>
+                <div class="param-item orange-border">
+                    <div class="param-label">Air Knife Pressure</div>
+                    <div class="param-value">0.20 – 0.35 MPa</div>
+                </div>
+                <div class="param-item orange-border">
+                    <div class="param-label">Ribbon Flattening Pressure</div>
+                    <div class="param-value">0.6 – 1.0 MPa</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 12: Soldering & Temperature Parameters -->
+        <div class="section">
+            <div class="section-title red-section">
+                <span class="icon">🔥</span>
+                <span>Soldering & Temperature Parameters</span>
+            </div>
+            <div class="param-grid">
+                <div class="param-item red-border">
+                    <div class="param-label">Soldering Temperature</div>
+                    <div class="param-value">340 ± 30 °C</div>
+                </div>
+                <div class="param-item red-border">
+                    <div class="param-label">Stringer Temperature</div>
+                    <div class="param-value">400 – 450 °C</div>
+                </div>
+                <div class="param-item red-border">
+                    <div class="param-label">Busbar Soldering Temperature</div>
+                    <div class="param-value">350 – 400 °C</div>
+                </div>
+                <div class="param-item red-border">
+                    <div class="param-label">Busbar Heating Range</div>
+                    <div class="param-value">200 – 350 °C (Max 400 °C)</div>
+                </div>
+                <div class="param-item red-border">
+                    <div class="param-label">Machine Area Temperature</div>
+                    <div class="param-value">25 °C</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 13: Electrical & Power Details -->
+        <div class="section">
+            <div class="section-title purple-section">
+                <span class="icon">⚡</span>
+                <span>Electrical & Power Details</span>
+            </div>
+            <div class="subsection">
+                <div class="subsection-title">Input Power Supply</div>
+                <div class="param-grid">
+                    <div class="param-item purple-border">
+                        <div class="param-label">Voltage</div>
+                        <div class="param-value">400 V AC</div>
+                    </div>
+                    <div class="param-item purple-border">
+                        <div class="param-label">Phase</div>
+                        <div class="param-value">3 Phase + Neutral + PE</div>
+                    </div>
+                    <div class="param-item purple-border">
+                        <div class="param-label">Frequency</div>
+                        <div class="param-value">50 Hz</div>
+                    </div>
+                    <div class="param-item purple-border">
+                        <div class="param-label">Machine Power Consumption</div>
+                        <div class="param-value">80 kW</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 14: Production Capacity -->
+        <div class="section">
+            <div class="section-title teal-section">
+                <span class="icon">🏭</span>
+                <span>Production Capacity</span>
+            </div>
+            <div class="param-grid">
+                <div class="param-item teal-border">
+                    <div class="param-label">Modules per Hour</div>
+                    <div class="param-value">~75 Modules</div>
+                </div>
+                <div class="param-item teal-border">
+                    <div class="param-label">Total Stringers</div>
+                    <div class="param-value">10,000</div>
+                </div>
+                <div class="param-item teal-border">
+                    <div class="param-label">Stringer to Packing Process Steps</div>
+                    <div class="param-value">22</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 15: Inspection & Testing -->
+        <div class="section">
+            <div class="section-title pink-section">
+                <span class="icon">🔍</span>
+                <span>Inspection & Testing</span>
+            </div>
+            <div class="param-grid">
+                <div class="param-item pink-border">
+                    <div class="param-label">EL Camera Type</div>
+                    <div class="param-value">Infrared / Integrative EL</div>
+                </div>
+                <div class="param-item pink-border">
+                    <div class="param-label">CCD Cameras</div>
+                    <div class="param-value">7 (Charged Coupled Device)</div>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <div class="subsection-title">Adhesion Test</div>
+                <div class="param-grid">
+                    <div class="param-item pink-border">
+                        <div class="param-label">Load</div>
+                        <div class="param-value">40 N per cm</div>
+                    </div>
+                    <div class="param-item pink-border">
+                        <div class="param-label">Top Position</div>
+                        <div class="param-value">5</div>
+                    </div>
+                    <div class="param-item pink-border">
+                        <div class="param-label">Bottom Position</div>
+                        <div class="param-value">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 16: Shrinkage Test -->
+        <div class="section">
+            <div class="section-title blue-section">
+                <span class="icon">📊</span>
+                <span>Shrinkage Test (EVA / EPE)</span>
+            </div>
+            <div class="param-grid">
+                <div class="param-item blue-border">
+                    <div class="param-label">Sample Size</div>
+                    <div class="param-value">100 × 100 mm</div>
+                </div>
+                <div class="param-item blue-border">
