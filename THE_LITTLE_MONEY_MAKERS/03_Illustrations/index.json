@@ -1,0 +1,398 @@
+{
+  "cover": {
+    "file": "Cover_Art/front_cover_art.png",
+    "w": 1100,
+    "h": 1100,
+    "px": [
+      2625,
+      2625
+    ],
+    "dpi": 300,
+    "printWidthIn": 8.75
+  },
+  "p01": {
+    "file": "Page_01/page_01_illustration.png",
+    "w": 1100,
+    "h": 1100,
+    "px": [
+      2625,
+      2625
+    ],
+    "dpi": 300,
+    "printWidthIn": 8.75
+  },
+  "p02": {
+    "file": "Page_02/page_02_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p03": {
+    "file": "Page_03/page_03_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p04": {
+    "file": "Page_04/page_04_illustration.png",
+    "w": 1480,
+    "h": 700,
+    "px": [
+      2250,
+      1064
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p05": {
+    "file": "Page_05/page_05_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p06": {
+    "file": "Page_06/page_06_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p07": {
+    "file": "Page_07/page_07_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p08": {
+    "file": "Page_08/page_08_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p09": {
+    "file": "Page_09/page_09_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p10": {
+    "file": "Page_10/page_10_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p11": {
+    "file": "Page_11/page_11_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p12": {
+    "file": "Page_12/page_12_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p13": {
+    "file": "Page_13/page_13_illustration.png",
+    "w": 1480,
+    "h": 620,
+    "px": [
+      2250,
+      943
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p14": {
+    "file": "Page_14/page_14_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p15": {
+    "file": "Page_15/page_15_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p16": {
+    "file": "Page_16/page_16_illustration.png",
+    "w": 1480,
+    "h": 640,
+    "px": [
+      2250,
+      973
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p17": {
+    "file": "Page_17/page_17_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p18": {
+    "file": "Page_18/page_18_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p19": {
+    "file": "Page_19/page_19_illustration.png",
+    "w": 1480,
+    "h": 660,
+    "px": [
+      2250,
+      1003
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p20": {
+    "file": "Page_20/page_20_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p21": {
+    "file": "Page_21/page_21_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p22": {
+    "file": "Page_22/page_22_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p23": {
+    "file": "Page_23/page_23_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p24": {
+    "file": "Page_24/page_24_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p25": {
+    "file": "Page_25/page_25_illustration.png",
+    "w": 1480,
+    "h": 800,
+    "px": [
+      2250,
+      1216
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p26": {
+    "file": "Page_26/page_26_illustration.png",
+    "w": 1480,
+    "h": 480,
+    "px": [
+      2250,
+      730
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p27": {
+    "file": "Page_27/page_27_illustration.png",
+    "w": 1480,
+    "h": 420,
+    "px": [
+      2250,
+      639
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "p28": {
+    "file": "Page_28/page_28_illustration.png",
+    "w": 1480,
+    "h": 520,
+    "px": [
+      2250,
+      791
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "back": {
+    "file": "Cover_Art/back_cover_art.png",
+    "w": 1100,
+    "h": 620,
+    "px": [
+      2625,
+      1480
+    ],
+    "dpi": 300,
+    "printWidthIn": 8.75
+  },
+  "w1": {
+    "file": "Worksheets/worksheet_1_art.png",
+    "w": 1480,
+    "h": 300,
+    "px": [
+      2250,
+      456
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "w2": {
+    "file": "Worksheets/worksheet_2_art.png",
+    "w": 1480,
+    "h": 300,
+    "px": [
+      2250,
+      456
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "w3": {
+    "file": "Worksheets/worksheet_3_art.png",
+    "w": 1480,
+    "h": 560,
+    "px": [
+      2250,
+      851
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "w4": {
+    "file": "Worksheets/worksheet_4_art.png",
+    "w": 1480,
+    "h": 300,
+    "px": [
+      2250,
+      456
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "w5": {
+    "file": "Worksheets/worksheet_5_art.png",
+    "w": 1480,
+    "h": 300,
+    "px": [
+      2250,
+      456
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  },
+  "w6": {
+    "file": "Worksheets/worksheet_6_art.png",
+    "w": 1480,
+    "h": 300,
+    "px": [
+      2250,
+      456
+    ],
+    "dpi": 300,
+    "printWidthIn": 7.5
+  }
+}

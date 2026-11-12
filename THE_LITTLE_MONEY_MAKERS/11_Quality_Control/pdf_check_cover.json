@@ -1,0 +1,44 @@
+{
+ "file": "Paperback_Full_Wrap_Cover_36pp_PremiumColour_17.3345x8.75in.pdf",
+ "pages": 1,
+ "size_ok": true,
+ "fonts": {
+  "AAAAAA+Andika": {
+   "embedded": true,
+   "type": "Type0"
+  },
+  "BAAAAA+Andika": {
+   "embedded": true,
+   "type": "Type0"
+  },
+  "CAAAAA+Baloo2-ExtraBold": {
+   "embedded": true,
+   "type": "Type0"
+  },
+  "DAAAAA+Baloo2-ExtraBold": {
+   "embedded": true,
+   "type": "Type0"
+  },
+  "EAAAAA+Baloo2-Bold": {
+   "embedded": true,
+   "type": "Type0"
+  },
+  "FAAAAA+Baloo2-Bold": {
+   "embedded": true,
+   "type": "Type0"
+  }
+ },
+ "min_image_dpi": 300,
+ "pages_detail": [
+  {
+   "page": 1,
+   "w_in": 17.334,
+   "h_in": 8.75,
+   "words": 86,
+   "min_img_dpi": 300
+  }
+ ],
+ "issues": [],
+ "toc_entries": 0,
+ "links": 0
+}

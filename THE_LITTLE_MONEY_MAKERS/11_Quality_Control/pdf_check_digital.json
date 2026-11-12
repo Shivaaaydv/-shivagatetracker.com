@@ -1,0 +1,305 @@
+{
+ "file": "The_Little_Money_Makers_Digital_Edition.pdf",
+ "pages": 36,
+ "size_ok": true,
+ "fonts": {
+  "AAAAAA+Baloo2-Bold": {
+   "embedded": true,
+   "type": "Type0"
+  },
+  "BAAAAA+Baloo2-Bold": {
+   "embedded": true,
+   "type": "Type0"
+  },
+  "CAAAAA+Baloo2-ExtraBold": {
+   "embedded": true,
+   "type": "Type0"
+  },
+  "DAAAAA+Baloo2-ExtraBold": {
+   "embedded": true,
+   "type": "Type0"
+  },
+  "EAAAAA+Andika": {
+   "embedded": true,
+   "type": "Type0"
+  },
+  "FAAAAA+Andika": {
+   "embedded": true,
+   "type": "Type0"
+  },
+  "GAAAAA+PatrickHand-Regular": {
+   "embedded": true,
+   "type": "Type0"
+  },
+  "HAAAAA+PatrickHand-Regular": {
+   "embedded": true,
+   "type": "Type0"
+  },
+  "IAAAAA+Andika-Bold": {
+   "embedded": true,
+   "type": "Type0"
+  },
+  "JAAAAA+Andika-Bold": {
+   "embedded": true,
+   "type": "Type0"
+  }
+ },
+ "min_image_dpi": 200,
+ "pages_detail": [
+  {
+   "page": 1,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 7,
+   "min_img_dpi": 206
+  },
+  {
+   "page": 2,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 91,
+   "min_img_dpi": 202
+  },
+  {
+   "page": 3,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 80,
+   "min_img_dpi": 202
+  },
+  {
+   "page": 4,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 95,
+   "min_img_dpi": 202
+  },
+  {
+   "page": 5,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 80,
+   "min_img_dpi": 202
+  },
+  {
+   "page": 6,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 83,
+   "min_img_dpi": 202
+  },
+  {
+   "page": 7,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 85,
+   "min_img_dpi": 206
+  },
+  {
+   "page": 8,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 80,
+   "min_img_dpi": 204
+  },
+  {
+   "page": 9,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 105,
+   "min_img_dpi": 215
+  },
+  {
+   "page": 10,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 77,
+   "min_img_dpi": 202
+  },
+  {
+   "page": 11,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 93,
+   "min_img_dpi": 224
+  },
+  {
+   "page": 12,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 70,
+   "min_img_dpi": 202
+  },
+  {
+   "page": 13,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 92,
+   "min_img_dpi": 202
+  },
+  {
+   "page": 14,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 81,
+   "min_img_dpi": 208
+  },
+  {
+   "page": 15,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 90,
+   "min_img_dpi": 202
+  },
+  {
+   "page": 16,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 83,
+   "min_img_dpi": 202
+  },
+  {
+   "page": 17,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 80,
+   "min_img_dpi": 202
+  },
+  {
+   "page": 18,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 75,
+   "min_img_dpi": 202
+  },
+  {
+   "page": 19,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 64,
+   "min_img_dpi": 202
+  },
+  {
+   "page": 20,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 73,
+   "min_img_dpi": 202
+  },
+  {
+   "page": 21,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 72,
+   "min_img_dpi": 202
+  },
+  {
+   "page": 22,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 92,
+   "min_img_dpi": 202
+  },
+  {
+   "page": 23,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 94,
+   "min_img_dpi": 294
+  },
+  {
+   "page": 24,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 81,
+   "min_img_dpi": 202
+  },
+  {
+   "page": 25,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 88,
+   "min_img_dpi": 202
+  },
+  {
+   "page": 26,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 109,
+   "min_img_dpi": 217
+  },
+  {
+   "page": 27,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 112,
+   "min_img_dpi": 201
+  },
+  {
+   "page": 28,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 152,
+   "min_img_dpi": 235
+  },
+  {
+   "page": 29,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 54,
+   "min_img_dpi": 200
+  },
+  {
+   "page": 30,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 70,
+   "min_img_dpi": 285
+  },
+  {
+   "page": 31,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 50,
+   "min_img_dpi": 201
+  },
+  {
+   "page": 32,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 53,
+   "min_img_dpi": 200
+  },
+  {
+   "page": 33,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 40,
+   "min_img_dpi": 200
+  },
+  {
+   "page": 34,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 101,
+   "min_img_dpi": 200
+  },
+  {
+   "page": 35,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 278,
+   "min_img_dpi": 311
+  },
+  {
+   "page": 36,
+   "w_in": 8.5,
+   "h_in": 8.5,
+   "words": 141,
+   "min_img_dpi": 311
+  }
+ ],
+ "issues": [],
+ "toc_entries": 56,
+ "links": 35
+}

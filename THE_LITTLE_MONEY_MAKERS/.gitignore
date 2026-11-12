@@ -1,0 +1,6 @@
+# regenerable build cache and temporary render files
+04_Book_Layout/build/cache/
+04_Book_Layout/build/*.html
+04_Book_Layout/build/.*.html
+04_Book_Layout/build/epub_work/
+03_Illustrations/**/.tmp_*

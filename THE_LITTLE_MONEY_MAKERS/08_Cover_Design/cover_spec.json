@@ -1,0 +1,21 @@
+{
+  "pageCount": 36,
+  "paper": "Premium colour (white)",
+  "spineFactorInPerPage": 0.002347,
+  "spineIn": 0.0845,
+  "trimIn": [
+    8.5,
+    8.5
+  ],
+  "bleedIn": 0.125,
+  "fullWrapIn": [
+    17.3345,
+    8.75
+  ],
+  "fullWrapPx300": [
+    5200,
+    2625
+  ],
+  "spineText": "none (KDP allows spine text only above 79 pages)",
+  "barcodeArea": "2 x 1.2 in, lower right of back cover, 0.25 in from trim edges"
+}
